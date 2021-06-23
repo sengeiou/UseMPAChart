@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="335dp"
+    android:background="@drawable/selector_switch_caclutor_track"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.SwitchCompat
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:thumb="@drawable/selector_switch_caclutor"
+        app:track="@drawable/selector_switch_caclutor_track"
+        android:layout_width="322dp"
+        android:id="@+id/times_switch"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FF606066"
+        android:gravity="center"
+        android:id="@+id/switch_tv_on"
+        android:text="7次"
+        app:layout_constraintStart_toStartOf="@+id/times_switch"
+        app:layout_constraintTop_toTopOf="@+id/times_switch"
+        app:layout_constraintBottom_toBottomOf="@id/times_switch"
+        android:layout_marginStart="74dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FF606066"
+        android:gravity="center"
+        android:id="@+id/switch_tv_off"
+        android:text="14次"
+        app:layout_constraintEnd_toEndOf="@+id/times_switch"
+        app:layout_constraintTop_toTopOf="@+id/times_switch"
+        app:layout_constraintBottom_toBottomOf="@id/times_switch"
+        android:layout_marginEnd="74dp"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+   
